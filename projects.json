@@ -1,6 +1,6 @@
 [
   {
-    "image": "assets/images/recoveryourmoney.webp",
+    "image": "assets/images/recoveryourmoney.png",
     "title": "Recover Your Money",
     "desc": "Responsive WordPress website converted from Figma design using Elementor Pro with modern animations and user-friendly interface. Features include custom forms, payment integration, and mobile optimization.",
     "tools": ["WordPress", "Elementor Pro", "Figma to WordPpress", "Responsive Design", "Speed Optimization"],
@@ -64,3 +64,4 @@
   }
 
 ]
+
