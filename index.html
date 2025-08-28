@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Umer Irshad - Expert WordPress Developer with 3+ years experience in custom themes, plugins, and e-commerce solutions.">
+    <meta name="keywords" content="WordPress Developer, WooCommerce, Custom Themes, Plugin Development, Elementor">
+    <meta name="author" content="Umer Irshad">
+    <title>Umer Irshad - WordPress Developer</title>
+    <link href="favicon.png" rel="icon" type="image/png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Umer Irshad Home">
+                <i class="fab fa-wordpress" aria-hidden="true"></i>
+                <span>Umer Irshad</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Umer Irshad</span></h1>
+                    <div class="title">WordPress Developer & Digital Craftsman</div>
+                    <div class="description">
+                        I create powerful, scalable WordPress solutions that drive business growth. 
+                        With 3+ years of experience, I specialize in custom themes, e-commerce platforms, 
+                        and performance optimization that deliver real results.
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="downloadCV()">
+                            <i class="fas fa-download" aria-hidden="true"></i>
+                            Download CV
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToContact()">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Let's Talk
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-container">
+                    <div class="center-logo">
+                        <div class="wordpress-w">W</div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element" style="--delay: 0s">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 1s">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 2s">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 3s">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                    <div class="rotating-circle" id="rotatingCircle">
+                        <div class="icon woo-icon" title="WooCommerce">woo</div>
+                        <div class="icon js-icon" title="JavaScript">JS</div>
+                        <div class="icon elementor-icon" title="Elementor">E</div>
+                        <div class="icon acf-icon" title="Advanced Custom Fields">ACF</div>
+                        <div class="icon php-icon" title="PHP">php</div>
+                        <div class="icon mysql-icon" title="MySQL">SQL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>What I Do</h2>
+                <p>Comprehensive WordPress solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item" tabindex="0">
+                    <div class="service-icon">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <h3>Custom Design</h3>
+                    <p>Beautiful, responsive WordPress themes designed from scratch to match your brand identity and user experience goals.</p>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                    <h3>WooCommerce</h3>
+                    <p>Complete e-commerce solutions with custom payment gateways, inventory management, and conversion optimization.</p>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <div class="service-icon">
+                        <i class="fas fa-plug" aria-hidden="true"></i>
+                    </div>
+                    <h3>Plugin Development</h3>
+                    <p>Custom WordPress plugins for unique functionality requirements, built with WordPress coding standards.</p>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <h3>Theme Development</h3>
+                    <p>From scratch theme development with modern coding standards, SEO optimization, and performance focus.</p>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <h3>LMS Setup</h3>
+                    <p>Learning management systems with Tutor LMS and LearnDash, including course management and certificates.</p>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed optimization, caching implementation, and Core Web Vitals improvements for better user experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>Technical Expertise</h2>
+                <p>Technologies and tools I use to bring your vision to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code" aria-hidden="true"></i> Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">WordPress/PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript/jQuery</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette" aria-hidden="true"></i> Design & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Elementor Pro</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS/SCSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma/Adobe XD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-shopping-cart" aria-hidden="true"></i> E-Commerce</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">WooCommerce</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Payment Gateways</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Inventory Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools" aria-hidden="true"></i> WordPress Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">ACF Pro</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Yoast SEO</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">WPML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A showcase of my recent WordPress development work</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded here dynamically -->
+                <div class="loading-projects">
+                    <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <p>Ready to bring your WordPress project to life? Get in touch!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:umerirshad722@yahoo.com">umerirshad722@yahoo.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:03106190392">+92 310 619 0392</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Bahawalpur, Punjab, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgvlepad" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Project Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select Budget Range</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-2500">$1,000 - $2,500</option>
+                            <option value="2500-5000">$2,500 - $5,000</option>
+                            <option value="5000+">$5,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Tell me about your project requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <a href="mailto:umerirshad722@yahoo.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="tel:03106190392" class="social-link" aria-label="Phone">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Performance and Analytics -->
+    <script>
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('Page Load Time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+            }, 0);
+        });
+    </script>
+</body>
+</html>
