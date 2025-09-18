@@ -1097,32 +1097,32 @@ function initLazyLoading() {
 // THEME MANAGEMENT (Bonus Feature)
 // ==========================================================================
 
-function initThemeToggle() {
-  // This could be expanded to include light/dark mode toggle
-  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+// function initThemeToggle() {
+//   // This could be expanded to include light/dark mode toggle
+//   const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
   
-  // Listen for changes in color scheme preference
-  prefersDarkScheme.addEventListener('change', (e) => {
-    // Update theme accordingly
-    console.log('Color scheme preference changed:', e.matches ? 'dark' : 'light');
-  });
-}
+//   // Listen for changes in color scheme preference
+//   prefersDarkScheme.addEventListener('change', (e) => {
+//     // Update theme accordingly
+//     console.log('Color scheme preference changed:', e.matches ? 'dark' : 'light');
+//   });
+// }
 
 // ==========================================================================
 // FINAL INITIALIZATION
 // ==========================================================================
 
 // Initialize everything when the page is fully loaded
-window.addEventListener('load', function() {
-  initLazyLoading();
-  initThemeToggle();
+// window.addEventListener('load', function() {
+//   initLazyLoading();
+//   initThemeToggle();
   
-  // Add a small delay to ensure smooth loading
-  setTimeout(() => {
-    // Refresh ScrollTrigger one final time
-    ScrollTrigger.refresh();
+//   // Add a small delay to ensure smooth loading
+//   setTimeout(() => {
+//     // Refresh ScrollTrigger one final time
+//     ScrollTrigger.refresh();
     
-    // Log successful initialization
-    console.log('✅ Portfolio initialized successfully!');
-  }, 100);
-});
+//     // Log successful initialization
+//     console.log('✅ Portfolio initialized successfully!');
+//   }, 100);
+// });
