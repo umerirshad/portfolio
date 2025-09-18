@@ -88,13 +88,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.hero,
+.services,
+.skills,
+.projects,
+.contact {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+} */
 
 /* ==========================================================================
    UTILITY CLASSES
    ========================================================================== */
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
 }
@@ -446,6 +460,7 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   animation: rotate 20s linear infinite;
+  --icon-radius: clamp(120px, 17.5vw, 175px);
 }
 
 .icon {
@@ -462,6 +477,7 @@ body {
   box-shadow: var(--shadow-lg);
   transition: all var(--transition-normal);
   cursor: pointer;
+  
 }
 
 .icon:hover {
@@ -548,7 +564,7 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--spacing-xl);
 }
 
@@ -631,6 +647,7 @@ body {
   z-index: 1;
 }
 
+
 /* ==========================================================================
    SKILLS SECTION
    ========================================================================== */
@@ -654,7 +671,7 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--spacing-xl);
 }
 
@@ -760,7 +777,7 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--spacing-xl);
 }
 
@@ -1163,6 +1180,7 @@ body {
 
   .hero-visual {
     order: -1;
+    margin-top: 60px;
   }
 
   .projects-grid {
@@ -1197,6 +1215,8 @@ body {
     transition: transform var(--transition-normal);
     box-shadow: var(--shadow-lg);
     border-top: 1px solid var(--gray-200);
+    max-width: 100vw;
+    box-sizing: border-box;
   }
 
   .nav-menu.active {
@@ -1211,11 +1231,26 @@ body {
     padding: 0 var(--spacing-md);
   }
 
-  .hero {
+  /* .hero {
     padding: var(--spacing-xl) 0;
     min-height: auto;
   }
+  .hero-visual
+ {
+    margin-top: 88px;
+    margin-bottom: 20px;
+  } */
 
+  .hero {
+    padding-top: 100px; /* Account for fixed navbar */
+    min-height: auto;
+  }
+  
+  .hero-visual {
+    margin-top: 0;
+    order: -1;
+  }
+   
   .hero-content {
     padding: var(--spacing-xl);
   }
@@ -1267,15 +1302,36 @@ body {
     font-size: var(--font-size-base);
   }
 
-  .hero-container {
-    width: 280px;
-    height: 280px;
+ /* .hero-container {
+    width: min(280px, 90vw);
+    height: min(280px, 90vw);
+    margin: 0 auto;
   }
 
   .rotating-circle {
-    width: 240px;
-    height: 240px;
+    width: min(240px, 80vw);
+    height: min(240px, 80vw);
+  } */
+
+  /* Fix icon positioning to prevent overflow */
+  /* .icon:nth-child(1) {
+    transform: translate(-50%, -50%) translateY(min(-120px, -35vw));
   }
+  .icon:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg) translateY(min(-120px, -35vw)) rotate(-60deg);
+  }
+  .icon:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(120deg) translateY(min(-120px, -35vw)) rotate(-120deg);
+  }
+  .icon:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(180deg) translateY(min(-120px, -35vw)) rotate(-180deg);
+  }
+  .icon:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(240deg) translateY(min(-120px, -35vw)) rotate(-240deg);
+  }
+  .icon:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(300deg) translateY(min(-120px, -35vw)) rotate(-300deg);
+  } */
 
   .center-logo {
     width: 90px;
@@ -1292,6 +1348,9 @@ body {
     width: 40px;
     height: 40px;
     font-size: var(--font-size-base);
+  }
+  .project-image {
+    height: 280px;
   }
 }
 
@@ -1312,13 +1371,33 @@ body {
   }
 
   .hero-container {
-    width: 250px;
-    height: 250px;
+    width: min(250px, 85vw);
+    height: min(250px, 85vw);
   }
 
   .rotating-circle {
-    width: 200px;
-    height: 200px;
+    width: min(200px, 75vw);
+    height: min(200px, 75vw);
+  }
+
+  /* Further reduce icon positioning for very small screens */
+  .icon:nth-child(1) {
+    transform: translate(-50%, -50%) translateY(min(-100px, -30vw));
+  }
+  .icon:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg) translateY(min(-100px, -30vw)) rotate(-60deg);
+  }
+  .icon:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(120deg) translateY(min(-100px, -30vw)) rotate(-120deg);
+  }
+  .icon:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(180deg) translateY(min(-100px, -30vw)) rotate(-180deg);
+  }
+  .icon:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(240deg) translateY(min(-100px, -30vw)) rotate(-240deg);
+  }
+  .icon:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(300deg) translateY(min(-100px, -30vw)) rotate(-300deg);
   }
 
   .center-logo {
@@ -1357,6 +1436,23 @@ body {
     width: 45px;
     height: 45px;
   }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-group {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-image {
+    height: 150px;
+}
 }
 
 /* ==========================================================================
