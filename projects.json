@@ -3,21 +3,21 @@
     "image": "assets/images/recoveryourmoney.png",
     "title": "Recover Your Money",
     "desc": "Responsive WordPress website converted from Figma design using Elementor Pro with modern animations and user-friendly interface. Features include custom forms, payment integration, and mobile optimization.",
-    "tools": ["WordPress", "Elementor Pro", "Figma to WordPpress", "Responsive Design", "Speed Optimization"],
+    "tools": ["Elementor Pro", "Figma to WordPpress", "Responsive Design", "Speed Optimization"],
     "projecturl": "https://recoveryourmoney.com"
   },
   {
-    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop&auto=format&q=80",
+    "image": "assets/images/whenigettoprison.png",
     "title": "When I Get To Prison",
     "desc": "User directory platform with frontend post submission, custom profile pages, and advanced search functionality using ACF and custom coding. Includes user authentication and content management.",
-    "tools": ["WordPress", "ACF Pro", "PHP", "jQuery", "Custom Development", "User Directory"],
+    "tools": ["ACF Pro", "PHP", "jQuery", "Custom Development", "User Directory"],
     "projecturl": "https://whenigetoprison.com"
   },
   {
     "image": "assets/images/fretstraps.webp",
     "title": "Fretstraps Video Platform",
     "desc": "Video management platform with Vimeo API integration, YouTube-style playlists, and custom registration system with unique access codes. Features video streaming and user progress tracking.",
-    "tools": ["WordPress", "Vimeo API", "Custom Plugin", "JavaScript", "SCSS", "PHP"],
+    "tools": ["Vimeo API", "Custom Plugin", "JavaScript", "SCSS", "PHP"],
     "projecturl": "https://www.fretstraps.com/"
   },
   {
@@ -28,42 +28,38 @@
     "projecturl": "https://blockguides.net/"
   },
   {
-    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop&auto=format&q=80",
-    "title": "Learning Management System",
-    "desc": "Custom LMS built with Tutor LMS featuring course management, student progress tracking, and certificate generation. Includes quiz system and instructor dashboard.",
-    "tools": ["Tutor LMS", "WordPress", "Custom Fields", "PHP", "MySQL", "Certificate API"],
-    "projecturl": "#"
+    "image": "assets/images/norfleat.webp",
+    "title": "Logistics & Driver Management",
+    "desc": "Built a website for Norfleet Transportation, a logistics company, featuring an application system for drivers.",
+    "tools": ["Elementor Pro", "Contact Form-7", "Responsive Design"],
+    "projecturl": "https://norfleettransportation.com/"
   },
   {
-    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop&auto=format&q=80",
-    "title": "News Portal Website",
-    "desc": "Multi-author news website with advanced filtering, social media integration, and SEO optimization. Features include custom post types, author profiles, and newsletter integration.",
-    "tools": ["WordPress", "Custom Post Types", "Yoast SEO", "Social APIs", "PHP", "Newsletter"],
-    "projecturl": "#"
+    "image": "assets/images/painmanagementroc.png",
+    "title": "Pain Management Acupuncture",
+    "desc": "Developed a website for PainManagementROC, offering chiropractic and acupuncture services. Focused on creating a clean, informative site to help clients learn about treatments and book appointments easily.",
+    "tools": ["Elementor Pro","Newsletter", "Responsive Design", "Booking System"],
+    "projecturl": "https://www.painmanagementroc.com/"
   },
   {
-    "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&auto=format&q=80",
-    "title": "Restaurant Management System",
-    "desc": "Complete restaurant website with online ordering system, table reservation, menu management, and customer reviews. Integrated with POS systems and delivery APIs.",
-    "tools": ["WordPress", "WooCommerce", "Reservation System", "POS Integration", "API Development"],
-    "projecturl": "#"
+    "image": "assets/images/riteplumbing.png",
+    "title": "Rite Plumbing NYC",
+    "desc": "Built a responsive, user-friendly website for Rite Plumbing NYC using Elementor and Contact Form 7. The site features easy navigation and a custom contact form to streamline customer inquiries.",
+    "tools": ["Elementor Pro", "Contact Form-7", "Responsive Design"],
+    "projecturl": "https://riteplumbingnyc.com/"
   },
   {
-    "image": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop&auto=format&q=80",
-    "title": "Real Estate Platform",
-    "desc": "Property listing website with advanced search filters, virtual tours, and agent management system. Features include mortgage calculator and property comparison tools.",
-    "tools": ["WordPress", "Custom Fields", "Map Integration", "Virtual Tours", "PHP", "JavaScript"],
-    "projecturl": "#"
+    "image": "assets/images/mommultivendor.png",
+    "title": "Multi-Vendor Marketplace",
+    "desc": "Set up a multi-vendor marketplace for MomSpace, integrating with Printful for on-demand printing. Created custom filters for better product navigation and ensured designs matched the brand’s visual identity.",
+    "tools": ["Elementor Pro", "Dokan", "Printful", "AJAX Based Location Filters & Product Search", "Payment Gateways", "Responsive Design","PHP", "CSS","JavaScript"],
+    "projecturl": "https://momboss.space/"
   },
-  {
-    "image": "https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?w=400&h=300&fit=crop&auto=format&q=80",
-    "title": "Healthcare Appointment System",
-    "desc": "Medical practice website with online appointment booking, patient portal, and doctor management system. HIPAA compliant with secure patient data handling.",
-    "tools": ["WordPress", "Appointment Booking", "Patient Portal", "Security", "PHP", "MySQL"],
-    "projecturl": "#"
+    {
+    "image": "assets/images/clickfunnelpage.png",
+    "title": "Landing Page Design",
+    "desc": "Designed a high-converting landing page for Calmesawc using ClickFunnels, focusing on user engagement and seamless lead capture.",
+    "tools": ["Click Funnel", "Responsive Design"],
+    "projecturl": "https://www.calmesawc.com/"
   }
-
 ]
-
-
-
