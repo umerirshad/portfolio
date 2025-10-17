@@ -1266,6 +1266,9 @@ body {
     max-width: 250px;
     justify-content: center;
   }
+  .description{
+    margin: 0 auto;
+}
 
   .hero-stats {
     gap: var(--spacing-md);
