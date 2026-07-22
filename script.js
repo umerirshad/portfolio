@@ -702,7 +702,7 @@ function downloadCV() {
   // Create a temporary link for download
   // Replace with actual CV file path
   const link = document.createElement('a');
-  link.href = 'assets/resume/umer-irshad-wordpress-developer-3years-exp.pdf'; // Update this path
+  link.href = 'assets/resume/Umer_Irshad_WordPress_Dev_Exp_3Years.pdf'; // Update this path
   link.download = 'Umer-Irshad-WordPress-Developer-CV.pdf';
   link.style.display = 'none';
   document.body.appendChild(link);
